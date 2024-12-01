@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "GSRTC Ticket Download";
+}
+
+<div class="container">
+    <h2>Download GSRTC Ticket</h2>
+    <form method="post" action="/Home/DownloadPdf">
+        <div class="form-group">
+            <label for="pnrNumber">Enter PNR Number</label>
+            <input type="text" class="form-control" id="pnrNumber" style="width:fit-content " name="pnrNumber" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin:10px 0px">Download Ticket</button>
+    </form>
+</div>
